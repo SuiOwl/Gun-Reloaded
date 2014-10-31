@@ -12,7 +12,7 @@ namespace wServer.realm.commands
     class GuildChatCommand : ICommand
     {
         public string Command { get { return "g"; } }
-        public int RequiredRank { get { return 0; } }
+        public int RequiredRank { get { return 1; } }
 
         ClientProcessor psr;
 
@@ -60,7 +60,7 @@ namespace wServer.realm.commands
     class InviteCommand : ICommand
     {
         public string Command { get { return "invite"; } }
-        public int RequiredRank { get { return 0; } }
+        public int RequiredRank { get { return 1; } }
 
         public void Execute(Player player, string[] args)
         {
