@@ -18,7 +18,7 @@ namespace wServer.realm.commands
     class SpawnCommand : ICommand
     {
         public string Command { get { return "spawn"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -79,7 +79,7 @@ namespace wServer.realm.commands
     class ArenaCommand : ICommand
     {
         public string Command { get { return "arena"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -182,7 +182,7 @@ namespace wServer.realm.commands
     class GiveCommand : ICommand
     {
         public string Command { get { return "give"; } }
-        public int RequiredRank { get { return 2; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -225,7 +225,7 @@ namespace wServer.realm.commands
     class TpCommand : ICommand
     {
         public string Command { get { return "tp"; } }
-        public int RequiredRank { get { return 2; } }
+        public int RequiredRank { get { return 6; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -265,7 +265,7 @@ namespace wServer.realm.commands
     class SetpieceCommand : ICommand
     {
         public string Command { get { return "setpiece"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -294,7 +294,7 @@ namespace wServer.realm.commands
     class DebugCommand : ICommand
     {
         public string Command { get { return "debug"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 10; } }
         
         public void Execute(Player player, string[] args)
         {
@@ -305,7 +305,7 @@ namespace wServer.realm.commands
     class KillAll : ICommand
     {
         public string Command { get { return "killall"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -333,7 +333,7 @@ namespace wServer.realm.commands
     class KillAllX : ICommand //this version gives XP points, but does not work for enemies with evaluation/inv periods
     {
         public string Command { get { return "killallx"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -361,7 +361,7 @@ namespace wServer.realm.commands
     class Kick : ICommand
     {
         public string Command { get { return "kick"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -393,7 +393,7 @@ namespace wServer.realm.commands
     class GetQuest : ICommand
     {
         public string Command { get { return "getquest"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 2; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -404,7 +404,7 @@ namespace wServer.realm.commands
     class OryxSay : ICommand
     {
         public string Command { get { return "osay"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -423,7 +423,7 @@ namespace wServer.realm.commands
     class SWhoCommand : ICommand //get all players from all worlds (this may become too large!)
     {
         public string Command { get { return "swho"; } }
-        public int RequiredRank { get { return 0; } }
+        public int RequiredRank { get { return 1; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -454,7 +454,7 @@ namespace wServer.realm.commands
     class Announcement : ICommand
     {
         public string Command { get { return "announce"; } } //msg all players in all worlds
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -481,7 +481,7 @@ namespace wServer.realm.commands
     class Summon : ICommand
     {
         public string Command { get { return "summon"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -510,7 +510,7 @@ namespace wServer.realm.commands
     class KillCommand : ICommand
     {
         public string Command { get { return "kill"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -546,7 +546,7 @@ namespace wServer.realm.commands
     class RestartCommand : ICommand
     {
         public string Command { get { return "restart"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -578,7 +578,7 @@ namespace wServer.realm.commands
     class VitalityCommand : ICommand
     {
         public string Command { get { return "vit"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -605,7 +605,7 @@ namespace wServer.realm.commands
     class DefenseCommand : ICommand
     {
         public string Command { get { return "def"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -632,7 +632,7 @@ namespace wServer.realm.commands
     class AttackCommand : ICommand
     {
         public string Command { get { return "att"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -659,7 +659,7 @@ namespace wServer.realm.commands
     class DexterityCommand : ICommand
     {
         public string Command { get { return "dex"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -686,7 +686,7 @@ namespace wServer.realm.commands
     class LifeCommand : ICommand
     {
         public string Command { get { return "hp"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -713,7 +713,7 @@ namespace wServer.realm.commands
     class ManaCommand : ICommand
     {
         public string Command { get { return "mp"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -740,7 +740,7 @@ namespace wServer.realm.commands
     class SpeedCommand : ICommand
     {
         public string Command { get { return "spd"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -767,7 +767,7 @@ namespace wServer.realm.commands
     class WisdomCommand : ICommand
     {
         public string Command { get { return "wis"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return ; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -794,7 +794,7 @@ namespace wServer.realm.commands
     class Whitelist : ICommand
     {
         public string Command { get { return "whitelist"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 12; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -840,7 +840,7 @@ namespace wServer.realm.commands
     class Ban : ICommand
     {
         public string Command { get { return "ban"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 6; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -885,7 +885,7 @@ namespace wServer.realm.commands
     class UnBan : ICommand
     {
         public string Command { get { return "unban"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 10; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -924,7 +924,7 @@ namespace wServer.realm.commands
     class Rank : ICommand
     {
         public string Command { get { return "rank"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 12; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -960,7 +960,7 @@ namespace wServer.realm.commands
     class GuildRank : ICommand
     {
         public string Command { get { return "grank"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 7; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -999,7 +999,7 @@ namespace wServer.realm.commands
     class ChangeGuild : ICommand
     {
         public string Command { get { return "setguild"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 9; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1039,7 +1039,7 @@ namespace wServer.realm.commands
     class TqCommand : ICommand
     {
         public string Command { get { return "tq"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 2; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1068,7 +1068,7 @@ namespace wServer.realm.commands
         class GodMode : ICommand
     {
         public string Command { get { return "god"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 4; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1103,7 +1103,7 @@ namespace wServer.realm.commands
     class GetIPCommand : ICommand
     {
         public string Command { get { return "ip"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 12; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1122,7 +1122,7 @@ namespace wServer.realm.commands
     class VanishCommand : ICommand
     {
         public string Command { get { return "vanish"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 9; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1167,7 +1167,7 @@ namespace wServer.realm.commands
     class LevelCommand : ICommand
     {
         public string Command { get { return "level"; } }
-        public int RequiredRank { get { return 3; } }
+        public int RequiredRank { get { return 2; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1195,7 +1195,7 @@ namespace wServer.realm.commands
     class NameCommand : ICommand
     {
         public string Command { get { return "name"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 12; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1241,7 +1241,7 @@ namespace wServer.realm.commands
     class RenameCommand : ICommand
     {
         public string Command { get { return "rename"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 12; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -1370,7 +1370,7 @@ namespace wServer.realm.commands
     class messageCommand : ICommand
     {
         public string Command { get { return "message"; } }
-        public int RequiredRank { get { return 4; } }
+        public int RequiredRank { get { return 9; } }
 
         public void Execute(Player player, string[] args)
         {
