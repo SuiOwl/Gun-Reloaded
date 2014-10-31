@@ -240,20 +240,34 @@ namespace wServer.realm.entities
                 case 0:
                     Name = psr.Account.Name; break;
                 case 1:
-                    Name = "[P] " + psr.Account.Name; break;
+                    Name = "[P]" + psr.Account.Name; break;
                 case 2:
-                    Name = "[Helper] " + psr.Account.Name; break;
+                    Name = "[Helper]" + psr.Account.Name; break;
                 case 3:
-                    Name = "[GM] " + psr.Account.Name; break;
+                    Name = "[Supporter]" + psr.Account.Name; break;
                 case 4:
-                    Name = "[Dev] " + psr.Account.Name; break;
+                    Name = "[Donator]" + psr.Account.Name; break;
                 case 5:
-                    Name = "[HDev] " + psr.Account.Name; break;
+                    Name = "[VIP]" + psr.Account.Name; break;
                 case 6:
-                    Name = "[CM] " + psr.Account.Name; break;
+                    Name = "[GM]" + psr.Account.Name; break;
                 case 7:
-                    Name = "[Founder] " + psr.Account.Name; break;
-            }
+                    Name = "[Dev]" + psr.Account.Name; break;
+                case 8:
+                    Name = "[Mod]" + psr.Account.Name; break;
+                case 9: 
+                    Name = "[Admin]" + psr.Account.Name; break;
+                case 10:
+                    Name = "[Head-Dev]" + psr.Account.Name; break;
+                case 11:
+                    Name = "[Head-Mod]" + psr.Account.Name; break;
+                case 12:
+                    Name = "[Head-Admin]" + psr.Account.Name; break;
+                case 13 
+                    Name = "[Co-Owner]" + psr.Account.Name; break;
+                case 14
+                    Name = "[Owner]" + psr.Account.Name; break;
+            }        
             nName = psr.Account.Name;
             AccountId = psr.Account.AccountId;
             Level = psr.Character.Level;
