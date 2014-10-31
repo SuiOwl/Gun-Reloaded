@@ -146,7 +146,7 @@ namespace wServer.realm.commands
                     return;
                 }
 
-                string[] tags = {"[P]", "[Helper]", "[Dev]", "[HDev]", "[CM]", "[GM]", "[Admin]", "[Founder]"};
+                string[] tags = {"[P]", "[Helper]", "[Mod]", "[Dev]", "[Head-Mod]", "[Head-Dev]", "[Admin]", "[Head-Admin]", "[Co-Owner]", "[Owner]"};
                 string playername = args[0].Trim();
                 if (tags.Contains(playername))
                 {
