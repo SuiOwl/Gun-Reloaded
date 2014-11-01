@@ -61,7 +61,7 @@ namespace wServer.realm.commands
     class PauseCommand : ICommand
     {
         public string Command { get { return "pause"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -132,7 +132,7 @@ namespace wServer.realm.commands
     class TellCommand : ICommand
     {
         public string Command { get { return "tell"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -486,7 +486,7 @@ namespace wServer.realm.commands
     class SoloCommand : ICommand
     {
         public string Command { get { return "solo"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -652,7 +652,7 @@ namespace wServer.realm.commands
        class AFKCommand : ICommand
        {
            public string Command { get { return "afk"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
