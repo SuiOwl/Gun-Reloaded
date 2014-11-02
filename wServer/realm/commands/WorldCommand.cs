@@ -61,7 +61,7 @@ namespace wServer.realm.commands
     class PauseCommand : ICommand
     {
         public string Command { get { return "pause"; } }
-        public int RequiredRank { get { return 0; } }
+        public int RequiredRank { get { return 1; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -132,7 +132,7 @@ namespace wServer.realm.commands
     class TellCommand : ICommand
     {
         public string Command { get { return "tell"; } }
-        public int RequiredRank { get { return 0; } }
+        public int RequiredRank { get { return 1; } }
 
         public void Execute(Player player, string[] args)
         {
