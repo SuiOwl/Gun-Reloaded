@@ -238,7 +238,7 @@ namespace wServer.realm.entities
             statsMgr = new StatsManager(this);
             switch(psr.Account.Rank) {
                 case 0:
-                    Name = psr.Account.Name; break;
+                    Name = "[P] " psr.Account.Name; break;
                 case 1:
                     Name = "[Reloaded] "  + psr.Account.Name; break;
                 case 2:
