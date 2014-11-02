@@ -13,7 +13,7 @@ namespace wServer.realm.commands
     class TutorialCommand : ICommand
     {
         public string Command { get { return "tutorial"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -31,7 +31,7 @@ namespace wServer.realm.commands
     class WhoCommand : ICommand
     {
         public string Command { get { return "who"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -50,7 +50,7 @@ namespace wServer.realm.commands
     class ServerCommand : ICommand
     {
         public string Command { get { return "server"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -61,7 +61,7 @@ namespace wServer.realm.commands
     class PauseCommand : ICommand
     {
         public string Command { get { return "pause"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -132,7 +132,7 @@ namespace wServer.realm.commands
     class TellCommand : ICommand
     {
         public string Command { get { return "tell"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -146,7 +146,7 @@ namespace wServer.realm.commands
                     return;
                 }
 
-                string[] tags = {"[P]", "[Helper]", "[Supporter]", "[Donator]", "[VIP]", "[GM]", "[Dev]", "[Mod]", "[Admin]", "[Head-Dev]", "[Head-Mod]", "[Head-Admin]", "[Co-Owner]", "[Owner]"};
+                string[] tags = {"[P] ", "[Reloaded] ", "[Helper] ", "[Supporter] ", "[Donator] ", "[VIP] ", "[GM] ", "[Dev] ", "[Mod] ", "[Admin] ", "[Head-Dev] ", "[Head-Mod] ", "[Head-Admin] ", "[Co-Owner] ", "[Owner] "};
                 string playername = args[0].Trim();
                 if (tags.Contains(playername))
                 {
@@ -404,7 +404,7 @@ namespace wServer.realm.commands
     class GroupCommand : ICommand
     {
         public string Command { get { return "group"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -507,7 +507,7 @@ namespace wServer.realm.commands
     class ShopCommand : ICommand
     {
         public string Command { get { return "shop"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -551,7 +551,7 @@ namespace wServer.realm.commands
     class ListCommands : ICommand
     {
         public string Command { get { return "commands"; } }
-        public int RequiredRank { get { return 1; } }
+        public int RequiredRank { get { return 0; } }
 
         public void Execute(Player player, string[] args)
         {
@@ -611,7 +611,7 @@ namespace wServer.realm.commands
        class statsCommand : ICommand
        {
            public string Command { get { return "stats"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -702,7 +702,7 @@ namespace wServer.realm.commands
        class ArenasCommand : ICommand
        {
            public string Command { get { return "arenas"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -803,7 +803,7 @@ namespace wServer.realm.commands
        class LeaderboardCommand : ICommand
        {
            public string Command { get { return "leaderboard"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -839,7 +839,7 @@ namespace wServer.realm.commands
     class ForgeListCommand : ICommand
        {
            public string Command { get { return "forgelist"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -915,7 +915,7 @@ namespace wServer.realm.commands
        class SellCommand : ICommand
        {
            public string Command { get { return "sell"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -965,7 +965,7 @@ namespace wServer.realm.commands
        class ForgeCommand : ICommand
        {
            public string Command { get { return "forge"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -1018,7 +1018,7 @@ namespace wServer.realm.commands
        class YesCommand : ICommand
        {
            public string Command { get { return "yes"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
@@ -1071,7 +1071,7 @@ namespace wServer.realm.commands
        class NoCommand : ICommand
        {
            public string Command { get { return "no"; } }
-           public int RequiredRank { get { return 1; } }
+           public int RequiredRank { get { return 0; } }
 
            public void Execute(Player player, string[] args)
            {
